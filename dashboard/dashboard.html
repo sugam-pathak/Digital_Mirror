@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weekly Dashboard</title>
+        <link rel="stylesheet" href="dashboard.css" />
+    </head>
+
+    <body>
+        <div class="dashboard-container">
+            <!--Current week range-->
+            <header class="dashboard-header">
+                <h1>Weekly Activity Dashboard</h1>
+                <span id="weekRange"></span>
+            </header>
+
+            <!--MAIN-->
+            <section class="dashboard-main">
+                <div class="panel left-panel">
+                    <h2>Daily Breakdown</h2>
+                    <div id="dailyList" class="daily-list"></div>
+                </div>
+
+                <div class="panel right-panel">
+                    <h2>Category Overview</h2>
+                    <canvas id="weeklyDonut" width="260" height="260"></canvas>
+                    <div id="categoryLegend" class="legend"></div>
+                </div>
+
+            </section>
+
+            <!--fotter-->
+            <footer class="dashboard-footer">
+
+                <button id="refreshBtn">Refresh</button>
+            </footer>
+        </div>
+
+        <script src="dashboard.js"></script>
+    </body>
+</html>

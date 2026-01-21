@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WorkMirroer Weekly</title>
+        <link rel="stylesheet" href="weekly.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="title">Weekly Mirror</div>
+                <div class="subtitle">A calm view of your last 7 days </div>
+            </header>
+
+            <div class="card">
+                <div class="card-title">Daily Totals</div>
+                <div id="dailyList"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Weekly Category Breakdown</div>
+                <canvas id="weeklyDonut" width="500" height="300"></canvas>
+            </div>
+        </div>
+
+        <script src="weekly.js"></script>
+    </body>
+</html>
